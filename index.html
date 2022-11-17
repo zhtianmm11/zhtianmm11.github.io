@@ -1,1 +1,179 @@
 欢迎光临
+<div class="pdfheader">
+    <table width="100%">
+        <tbody>
+            <tr class="firstRow">
+                <td colspan="3">
+                    <p style="text-align: center; margin: 20px 0 0;">
+                        <span style="font-size: 36px; font-family: 宋体, SimSun;">美年大健康体检中心</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p style="text-align: center; margin: 0;">
+                        <span style="font-size: 26px; font-family: 宋体, SimSun;">CT检查报告单</span>
+                    </p>
+                    <p style="height: 2px; margin: 10px 0 5px; background-color: #000;">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="word-break: break-all;" height="26" width="33.33%">
+                    <span style="font-family: 黑体, SimHei; font-size: 14px;">姓名：</span><label class="pName"><span style="font-family: 黑体, SimHei; font-size: 
+
+14px;">[pname]</span></label>
+                </td>
+                <td style="word-break: break-all;" height="26" width="33.33%">
+                    <span style="font-family: 黑体, SimHei; font-size: 14px;">性别：</span><label class="sex"><span style="font-size: 14px; font-family: 黑体, 
+
+SimHei;">[sex]</span></label>
+                </td>
+                <td style="word-break: break-all;" height="26" width="33.33%">
+                    <span style="font-family: 黑体, SimHei; font-size: 14px;">年龄：</span><label class="page"><span style="font-family: 黑体, SimHei; font-size: 
+
+14px;">[page]</span></label>
+                </td>
+            </tr>
+            <tr>
+                <td style="word-break: break-all;" height="26" width="33.33%">
+                    <span style="font-family: 黑体, SimHei; font-size: 14px;">放射学检查号码：</span><label class="imageNo"><span style="font-family: 黑体, SimHei; font-size: 
+
+14px;">[imageNo]</span></label>
+                </td>
+                <td style="word-break: break-all;" height="26" width="33.33%">
+                    <span style="font-family: 黑体, SimHei; font-size: 14px;">体检号：</span><label class="admId"><span style="font-size: 14px;">[admId]</span></label>
+                </td>
+                <td style="word-break: break-all;" height="26" width="33.33%">
+                    <span style="font-family: 黑体, SimHei; font-size: 14px;">检查时间：</span><label class="checkTime"><span style="font-family: 黑体, SimHei; font-size: 
+
+14px;">[checkTime]</span></label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="pdfcontent">
+    <table align="center" width="100%">
+        <tbody>
+            <tr class="firstRow">
+                <td style="word-break: break-all;" valign="top">
+                    <span style="font-family: 黑体, SimHei; font-size: 16px;">检查项目：
+
+[checkItem]</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="height: 1px; margin: 5px 0; background-color: #000;">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td height="20" valign="top">
+                    <span style="font-family: 黑体, SimHei; font-size: 16px; display: 
+
+block;"><span style="font-family: 黑体, SimHei;">关键影像：</span></span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" height="168">
+                    <img style="margin-right: 2px; width: 320px; height: 240px;" name="guanjianyingxiang01" src="https://oss.yizhen.cn/yizhen/hospital/template-
+
+keyimg01.png"/><img style="margin-right: 2px; width: 320px; height: 240px;" name="guanjianyingxiang02" src="https://oss.yizhen.cn/yizhen/hospital/template-keyimg02.png"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="height: 1px; margin: 5px 0; background-color: #000;">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td height="20" valign="top">
+                    <span style="font-family: 黑体, SimHei; font-size: 16px; display: block; 
+
+margin-top: 2px;">放射学所见：</span>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <textarea style="width: 100%; min-height: 170px; height: auto;" class="eyesee"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="height: 1px; margin: 5px 0; background-color: #000;">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td height="20" valign="top">
+                    <span style="font-family: 黑体, SimHei; font-size: 16px; display: block;">放射学意见：（仅供临床医师参考）</span>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <textarea style="width: 100%; min-height: 170px; height: auto" class="result"></textarea>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="pdffooter">
+    <table align="center" width="100%" data-sort="sortDisabled">
+        <tbody>
+            <tr class="firstRow">
+                <td colspan="2">
+                    <p style="height: 2px; margin: 8px 0 1px; background-color: #000;">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" width="50%">
+                    <span style="font-family: 黑体, SimHei; vertical-align: middle; font-size: 
+
+16px;">书写医师：</span><label style="margin: 0;" class="cdocName"><span style="font-family: 黑
+
+体, SimSun; vertical-align: middle; font-size: 16px;">[cdocName]</span></label><img style="vertical-align: middle; width: 102px; height: 48px;" src="https://oss.yizhen.cn/yizhen/doctor/signature_zd.png" height="48" width="102"/>
+                </td>
+                <td valign="middle" width="50%">
+                    <span style="font-family: 黑体, SimHei; vertical-align: middle; font-size: 
+
+16px;">审核医师：</span><label style="margin: 0;" class="rdocName"><span style="font-family: 黑
+
+体, SimSun; vertical-align: middle; font-size: 16px;">[rdocName]</span></label><img style="vertical-align: middle; width: 115px; height: 53px;" src="https://oss.yizhen.cn/yizhen/doctor/signature_sh.png" height="53" width="115"/>
+                </td>
+            </tr>
+            <tr>
+                <td height="30" valign="middle" width="50%">
+                    <span style="font-family: 黑体, SimHei; font-size: 16px;">书写报告时间：</span><label class="contentTime"><span style="font-family: 黑体, SimHei; font-size: 
+
+16px;">[contentTime]</span></label>
+                </td>
+                <td height="30" valign="middle" width="50%">
+                    <span style="font-family: 黑体, SimHei; font-size: 16px;">报告审核时间：</span><label class="checkedTime"><span style="font-family: 黑体, SimHei; font-size: 
+
+16px;">[checkedTime]</span></label>
+                </td>
+            </tr>
+            <tr>
+                <td height="30" valign="middle" colspan="2">
+                    <span style="font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;本报告非医疗诊断报
+
+告，任何医疗行为请遵从医嘱</span><br/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    <br/>
+</p>
